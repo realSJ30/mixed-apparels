@@ -19,8 +19,25 @@ const ProductListing = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4 gap-y-10 gap-x-12">
-      <ProductComponent />
+    <div className="flex flex-col container mx-auto">
+      <div className="mb-8">
+        <label htmlFor="search" className="block text-sm font-medium text-gray-700">
+          Search
+        </label>
+        <div className="relative mt-1 rounded-md shadow-sm">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            className="block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+            placeholder="T-shirts, pants, shoes and etc."
+          />
+
+        </div>
+      </div>
+      <div className="grid grid-cols-4 gap-y-10 gap-x-12">
+        <ProductComponent />
+      </div>
     </div>
   );
 };
