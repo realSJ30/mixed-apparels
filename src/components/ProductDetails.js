@@ -36,11 +36,11 @@ const ProductDetails = () => {
       ) : (
         <>
           <div className="mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
-            <div className="hidden aspect-w-3 aspect-h-4 rounded-lg overflow-hidden lg:block">
+            <div className="aspect-w-3 aspect-h-4 rounded-lg overflow-hidden block">
               <img
                 src={image}
                 alt={"MIXED APPARELS"}
-                className="w-full h-full object-center object-cover"
+                className="w-1/2 h-1/2 md:w-full md:h-full object-center object-cover"
               />
             </div>
           </div>
